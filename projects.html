@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — NeurIPS Ski Retreat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="page-nav">
+    <div class="page-nav-inner">
+      <a href="index.html" class="page-nav-logo">← NeurIPS Retreat</a>
+      <a href="practical.html">Practical Info</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="participants.html">Participants</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="activities.html">Fun Activities</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">GitHub Issues</div>
+      <h1>🔬 Projects</h1>
+    </div>
+  </div>
+
+  <section class="projects-section">
+    <div class="container">
+
+      <div class="project-propose">
+        <div>
+          <h3>Propose a Project</h3>
+          <p>
+            Have a paper section, analysis, or idea to contribute?
+            Open a GitHub Issue and it will appear here automatically.
+          </p>
+        </div>
+        <a class="btn-propose" id="new-issue-link" href="#" target="_blank" rel="noopener">
+          + Open an Issue
+        </a>
+      </div>
+
+      <div id="projects-loading">Loading projects from GitHub Issues…</div>
+      <div class="projects-grid" id="projects-grid" style="display:none;"></div>
+      <div id="projects-error">
+        ⚠️ Could not load projects. Make sure
+        <code style="background:var(--snow); padding:0.1rem 0.4rem; border-radius:4px;">GITHUB_OWNER</code>
+        and
+        <code style="background:var(--snow); padding:0.1rem 0.4rem; border-radius:4px;">GITHUB_REPO</code>
+        are set correctly in <code style="background:var(--snow); padding:0.1rem 0.4rem; border-radius:4px;">script.js</code>.
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>NeurIPS Challenge Ski &amp; Writing Retreat · Orford, Québec · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
