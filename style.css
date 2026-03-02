@@ -639,7 +639,7 @@ section h2 {
   .sticky-nav { padding: 0.75rem 1.25rem; }
   .nav-inner { flex-wrap: wrap; }
   .nav-logo { width: 100%; margin-bottom: 0.4rem; }
-  .nav-links { gap: 0.9rem; }
+  .nav-links { gap: 0.5rem 0.9rem; flex-wrap: wrap; }
 
   /* Page nav (sub-pages) */
   .page-nav { padding: 0.75rem 1.25rem; }
