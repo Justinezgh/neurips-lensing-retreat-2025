@@ -632,13 +632,45 @@ section h2 {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
-  .hero-content { padding: 2rem; }
-  .nav-links { gap: 1rem; }
+  /* Hero */
+  .hero-content { padding: 2rem 1.25rem; }
+
+  /* Sticky nav (index.html) */
+  .sticky-nav { padding: 0.75rem 1.25rem; }
+  .nav-inner { flex-wrap: wrap; }
+  .nav-logo { width: 100%; margin-bottom: 0.4rem; }
+  .nav-links { gap: 0.9rem; }
+
+  /* Page nav (sub-pages) */
+  .page-nav { padding: 0.75rem 1.25rem; }
+  .page-nav-inner { flex-wrap: wrap; }
+  .page-nav-logo { width: 100%; margin-right: 0; margin-bottom: 0.4rem; }
+  .page-nav a { margin-right: 0.9rem; font-size: 0.82rem; }
+
+  /* Nav cards */
+  .nav-cards { grid-template-columns: repeat(2, 1fr); }
+
+  /* Section spacing */
+  section { padding: 4rem 0; }
+
+  /* Rationale image */
+  .rationale-image img { max-width: 100%; }
+
+  /* Activity cards */
   .activity-card { flex-direction: column; }
+
+  /* Schedule */
   .schedule-item { flex-wrap: wrap; gap: 0.75rem; }
   .schedule-time { min-width: auto; }
+
+  /* Projects */
   .project-propose { flex-direction: column; text-align: center; }
   .btn-propose { align-self: center; }
-  .page-nav-inner { gap: 0; }
-  .page-nav a { margin-right: 1rem; font-size: 0.82rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .nav-cards { grid-template-columns: 1fr; }
+  .page-hero { padding: 2.5rem 0 2rem; }
+  section { padding: 3rem 0; }
 }
