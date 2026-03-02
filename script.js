@@ -2,8 +2,8 @@
 //  CONFIGURATION
 //  Update GITHUB_OWNER and GITHUB_REPO before pushing to GitHub
 // ============================================================
-const GITHUB_OWNER = 'YOUR_USERNAME';   // e.g. 'jsmith'
-const GITHUB_REPO  = 'neurips-lensing-retreat';
+const GITHUB_OWNER = 'Justinezgh';   // e.g. 'jsmith'
+const GITHUB_REPO  = 'neurips-lensing-retreat-2025';
 
 // ============================================================
 //  STICKY NAV  — index.html only
